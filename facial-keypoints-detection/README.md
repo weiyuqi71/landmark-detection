@@ -24,6 +24,7 @@ After getting the model, we used the model to predict facial keypoints and add a
 User can select one of the mask we provided and one image, then we could output the face wearing the mask.
 
 mask library:
+<center>
 <table><tr><td>Mask 1</td><td>Mask 2</td><td>Mask 3</td><td>Mask 4</td><td>Mask 5</td><td>Mask 6</td><td>Mask 7</td>
  </tr><tr>
     <td><img src="mask/1.jpg" width=80 height=80></td>
@@ -33,7 +34,7 @@ mask library:
 	 <td><img src="mask/5.jpg" width=80 height=80></td>
 	 <td><img src="mask/6.jpg" width=80 height=80></td>
 	 <td><img src="mask/7.jpg"  width=80 height=80></td>
-  </tr></table>
+  </tr></table></center>
 
 - imagepath(string): is the path for the input image. Note: the input face should be front face.
 - mask_id(int): is for choosing a certain mask
@@ -43,6 +44,9 @@ mask library:
 face_mask(imagepath,mask_id,crop)
 ```
 samples:
-
-<img src="mask/1.jpg" width=120 height=120><img src="mask/2.jpg"  width=120 height=120><img src="mask/3.jpg" width=120 height=120></td>
-<img src="mask/1.jpg" width=120 height=120><img src="mask/2.jpg"  width=120 height=120><img src="mask/3.jpg" width=120 height=120></td>
+<p align="center">
+<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></td>
+</p>
+<p align="center">
+<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></td>
+</p>
