@@ -17,7 +17,7 @@ The data is from: https://github.com/rupaai/facial_keypoint_detection
 Here are some sample images in the dataset:
 
 <p align="center">
-<img src="images/1.jpg" width=150><img src="images/2.jpg"  width=150><img src="images/3.jpg" width=150><img src="images/4.jpg" width=150><img src="images/5.jpg" width=150><img src="images/6.jpg" width=150>
+<img src="images/7.jpg" width=150><img src="images/8.jpg"  width=150><img src="images/9.jpg" width=150><img src="images/10.jpg" width=150><img src="images/11.jpg" width=150><img src="images/12.jpg" width=150>
 </p>
 
 #### Model
@@ -48,7 +48,7 @@ scheduler=optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1
 
 And here are some of the keypoints detection results for the test images:
 <p align="center">
-<img src="result/1.jpg" width=150 height=150><img src="result/2.jpg" width=150 height=150><img src="result/3.jpg" width=150 height=150><img src="result/4.jpg" width=150 height=150><img src="result/5.jpg" width=150 height=150><img src="result/6.jpg" width=150 height=150>
+<img src="output/1.png" width=150 height=150><img src="output/2.png" width=150 height=150><img src="output/3.png" width=150 height=150><img src="output/4.png" width=150 height=150><img src="output/5.png" width=150 height=150><img src="output/6.png" width=150 height=150>
 </p>
 
 #### Application
@@ -98,17 +98,17 @@ To map four corners of a mask to one’s nose, lower jaw and two sides of cheek 
 
 1.For normal mask, we match the four point shows in the mask image below with the four point shows in the face below.
 <p align="center">
-<img src="images/4.jpg" width=300 height=300><img src="images/1.jpg" width=300 height=300><img src="images/6.jpg" width=300 height=300></p>
+<img src="images/4.png" width=300 height=300><img src="images/1.jpg" width=300 height=300><img src="images/6.png" width=300 height=300></p>
 
 2.We also do this on some cool masks, for example, the one weared by Bane From "Batman:The Dark Knight Rises"
 
 <p align="center">
-<img src="images/3.jpg" width=400 height=400></p>
+<img src="images/3.jpg" width=300></p>
 
 For those cool masks without the lowest point, we match the lower jaw with the center bottom point of the masks.
 
 <p align="center">
-<img src="images/4.jpg" width=300 height=300><img src="images/2.jpg" width=300 height=300><img src="images/5.jpg" width=300 height=300></p>
+<img src="images/4.png" width=300 height=300><img src="images/2.jpg" width=300 height=300><img src="images/5.png" width=300 height=300></p>
 
 **Many samples here**
 <p align="center">
