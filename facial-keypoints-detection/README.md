@@ -77,7 +77,8 @@ mask library:
 face_mask(imagepath,mask_id,crop)
 ```
 samples:
-
-<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200>
-<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200>
+<p align="center">
+<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
+<p align="center">
+<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
 
