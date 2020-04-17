@@ -17,7 +17,7 @@ The data is from: https://github.com/rupaai/facial_keypoint_detection
 Here are some sample images in the dataset:
 
 <p align="center">
-<img src="images/7.jpg" width=150><img src="images/8.jpg"  width=150><img src="images/9.jpg" width=150><img src="images/10.jpg" width=150><img src="images/11.jpg" width=150><img src="images/12.jpg" width=150>
+<img src="images/7.jpg" width=150 height=150><img src="images/8.jpg"  width=150 height=150><img src="images/9.jpg" width=150 height=150><img src="images/10.jpg" width=150 height=150><img src="images/11.jpg" width=150 height=150><img src="images/12.jpg" width=150 height=150>
 </p>
 
 #### Model
