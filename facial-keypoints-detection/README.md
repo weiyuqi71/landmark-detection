@@ -54,9 +54,22 @@ And here are some of the keypoints detection results for the test images:
 #### Application
 After getting the model, we used the model to predict facial keypoints and add a mask on the face via wrapping.
 
-User can select one of the mask we provided and one image, then we could output the face wearing the mask.
+**1. facial keypoint detection**
+
+Run the face_landmark function in the prediction.ipynb with input image could return this image with keypoints showing.
+
+- imagepath(string): is the path for the input image. Note: the input face should be front face.
+- crop(boolean): True is for detect and crop face, False represent using the original image. Use True if the input image is not a head only photo. Default is False
+
+```
+face_landmark(imagepath,crop)
+```
+**2. adding mask to face**
+
+We prepared 7 different types of masks.User can select one of the mask we provided and one image, then we could output the face wearing the mask.
 
 mask library:
+
 <p align="center">
 <table><tr><td>Mask 1</td><td>Mask 2</td><td>Mask 3</td><td>Mask 4</td><td>Mask 5</td><td>Mask 6</td><td>Mask 7</td>
  </tr><tr>
@@ -68,6 +81,8 @@ mask library:
 	 <td><img src="mask/6.jpg" width=100 height=100></td>
 	 <td><img src="mask/7.jpg"  width=100 height=100></td>
   </tr></table></p>
+
+Run the face_mask function in the prediction.ipynb with input image and mask id could return this image wearing the mask.
 
 - imagepath(string): is the path for the input image. Note: the input face should be front face.
 - mask_id(int): is for choosing a certain mask
@@ -81,4 +96,8 @@ samples:
 <img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
 <p align="center">
 <img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
+
+How we did it?
+
+To map four corners of a mask to one’s nose, lower jaw and two sides of cheek ,we apply homography matrix using SVD. As long as keypoints are well estimated, the wrapping should be beautiful.
 
