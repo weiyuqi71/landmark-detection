@@ -112,7 +112,7 @@ For those cool masks without the lowest point, we match the lower jaw with the c
 
 **Many samples here**
 <p align="center">
-<img src="outputs/7.png" width=200 height=200><img src="outputs/8.png"  width=200 height=200><img src="outputs/9.png" width=200 height=200></p>
+<img src="outputs/7.png" width=180 height=180><img src="outputs/8.png"  width=180 height=180><img src="outputs/9.png" width=180 height=180></p>
 <p align="center">
-<img src="outputs/10.png" width=200 height=200><img src="outputs/11.png"  width=200 height=200><img src="outputs/12.png" width=200 height=200></p>
+<img src="outputs/10.png" width=180 height=180><img src="outputs/11.png"  width=180 height=180><img src="outputs/12.png" width=180 height=180></p>
 
