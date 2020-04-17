@@ -16,17 +16,23 @@ The data is from: https://github.com/rupaai/facial_keypoint_detection
 
 Here are some sample images in the dataset:
 
-<img src="images/1.jpg" width=100 height=100><img src="images/2.jpg"  width=100 height=100><img src="images/3.jpg" width=100 height=100><img src="images/4.jpg" width=100 height=100><img src="images/5.jpg" width=100 height=100><img src="images/6.jpg" width=100 height=100>
+<p align="center">
+<img src="images/1.jpg" width=150><img src="images/2.jpg"  width=150><img src="images/3.jpg" width=150><img src="images/4.jpg" width=150><img src="images/5.jpg" width=150><img src="images/6.jpg" width=150>
+</p>
 
 #### Model
 In this project, EfficientNet-b0 with pretrained weights from ImageNet was used. Model architecture is shown below.
+
 <p align="center">
 <img  src="https://1.bp.blogspot.com/-DjZT_TLYZok/XO3BYqpxCJI/AAAAAAAAEKM/BvV53klXaTUuQHCkOXZZGywRMdU9v9T_wCLcBGAs/s640/image2.png" alt="keypoints" width="1200"/>
 </p>
+
+<p style='text-align: justify;'>
 According google AI news, EfficientNet models achieve both higher accuracy and better efficiency over existing CNNs with less number of parameters. More details seen: https://ai.googleblog.com/2019/05/efficientnet-improving-accuracy-and.html
+</p>
 
 <p align="center">
-<img  src="https://1.bp.blogspot.com/-oNSfIOzO8ko/XO3BtHnUx0I/AAAAAAAAEKk/rJ2tHovGkzsyZnCbwVad-Q3ZBnwQmCFsgCEwYBhgL/s640/image3.png" alt="keypoints" width="300"/>
+<img  src="https://1.bp.blogspot.com/-oNSfIOzO8ko/XO3BtHnUx0I/AAAAAAAAEKk/rJ2tHovGkzsyZnCbwVad-Q3ZBnwQmCFsgCEwYBhgL/s640/image3.png" alt="keypoints" width="450"/>
 </p>
 
 ####  Model Training:
@@ -37,11 +43,13 @@ optimizer = optim.Adam(params = net.parameters(), lr = 0.001)
 scheduler=optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=10, threshold=0.0001, verbose=True)
 ```
 <p align="center">
-<img  src="loss_curve.png" alt="loss curve" width="300"/>
+<img  src="loss_curve.png" alt="loss curve" width="450"/>
 </p>
 
 And here are some of the keypoints detection results for the test images:
-<img src="result/1.jpg" width=100 height=100><img src="result/2.jpg"  width=100 height=100><img src="result/3.jpg" width=100 height=100><img src="result/4.jpg" width=100 height=100><img src="result/5.jpg" width=100 height=100><img src="result/6.jpg" width=100 height=100>
+<p align="center">
+<img src="result/1.jpg" width=100 height=100><img src="result/2.jpg" width=100 height=100><img src="result/3.jpg" width=100 height=100><img src="result/4.jpg" width=100 height=100><img src="result/5.jpg" width=100 height=100><img src="result/6.jpg" width=100 height=100>
+</p>
 
 #### Application
 After getting the model, we used the model to predict facial keypoints and add a mask on the face via wrapping.
@@ -49,6 +57,7 @@ After getting the model, we used the model to predict facial keypoints and add a
 User can select one of the mask we provided and one image, then we could output the face wearing the mask.
 
 mask library:
+
 <table><tr><td>Mask 1</td><td>Mask 2</td><td>Mask 3</td><td>Mask 4</td><td>Mask 5</td><td>Mask 6</td><td>Mask 7</td>
  </tr><tr>
     <td><img src="mask/1.jpg" width=80 height=80></td>
