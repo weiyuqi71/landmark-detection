@@ -48,7 +48,7 @@ scheduler=optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1
 
 And here are some of the keypoints detection results for the test images:
 <p align="center">
-<img src="output/1.png" width=150 height=150><img src="output/2.png" width=150 height=150><img src="output/3.png" width=150 height=150><img src="output/4.png" width=150 height=150><img src="output/5.png" width=150 height=150><img src="output/6.png" width=150 height=150>
+<img src="outputs/1.png" width=150 height=150><img src="outputs/2.png" width=150 height=150><img src="outputs/3.png" width=150 height=150><img src="outputs/4.png" width=150 height=150><img src="outputs/5.png" width=150 height=150><img src="outputs/6.png" width=150 height=150>
 </p>
 
 #### Application
@@ -112,9 +112,7 @@ For those cool masks without the lowest point, we match the lower jaw with the c
 
 **Many samples here**
 <p align="center">
-<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
+<img src="outputs/7.png" width=200 height=200><img src="outputs/8.png"  width=200 height=200><img src="outputs/9.png" width=200 height=200></p>
 <p align="center">
-<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
-
-
+<img src="outputs/10.png" width=200 height=200><img src="outputs/11.png"  width=200 height=200><img src="outputs/12.png" width=200 height=200></p>
 
