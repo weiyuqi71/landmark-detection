@@ -98,7 +98,7 @@ To map four corners of a mask to one’s nose, lower jaw and two sides of cheek 
 
 1.For normal mask, we match the four point shows in the mask image below with the four point shows in the face below.
 <p align="center">
-<img src="images/4.png" width=300 height=300><img src="images/1.jpg" width=300 height=300><img src="images/6.png" width=300 height=300></p>
+<img src="images/4.png" width=200><img src="images/1.jpg" width=200><img src="images/6.png" width=200></p>
 
 2.We also do this on some cool masks, for example, the one weared by Bane From "Batman:The Dark Knight Rises"
 
@@ -108,7 +108,7 @@ To map four corners of a mask to one’s nose, lower jaw and two sides of cheek 
 For those cool masks without the lowest point, we match the lower jaw with the center bottom point of the masks.
 
 <p align="center">
-<img src="images/4.png" width=300 height=300><img src="images/2.jpg" width=300 height=300><img src="images/5.png" width=300 height=300></p>
+<img src="images/4.png" width=200><img src="images/2.jpg" width=200><img src="images/5.png" width=200></p>
 
 **Many samples here**
 <p align="center">
