@@ -91,13 +91,30 @@ Run the face_mask function in the prediction.ipynb with input image and mask id 
 ```
 face_mask(imagepath,mask_id,crop)
 ```
-samples:
-<p align="center">
-<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
-<p align="center">
-<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
 
-How we did it?
+**How we did it?**
 
 To map four corners of a mask to one’s nose, lower jaw and two sides of cheek ,we apply homography matrix using SVD. As long as keypoints are well estimated, the wrapping should be beautiful.
+
+1.For normal mask, we match the four point shows in the mask image below with the four point shows in the face below.
+<p align="center">
+<img src="images/4.jpg" width=300 height=300><img src="images/1.jpg" width=300 height=300><img src="images/6.jpg" width=300 height=300></p>
+
+2.We also do this on some cool masks, for example, the one weared by Bane From "Batman:The Dark Knight Rises"
+
+<p align="center">
+<img src="images/3.jpg" width=400 height=400></p>
+
+For those cool masks without the lowest point, we match the lower jaw with the center bottom point of the masks.
+
+<p align="center">
+<img src="images/4.jpg" width=300 height=300><img src="images/2.jpg" width=300 height=300><img src="images/5.jpg" width=300 height=300></p>
+
+**Many samples here**
+<p align="center">
+<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
+<p align="center">
+<img src="mask/1.jpg" width=200 height=200><img src="mask/2.jpg"  width=200 height=200><img src="mask/3.jpg" width=200 height=200></p>
+
+
 
